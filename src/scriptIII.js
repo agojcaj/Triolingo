@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     var options = {
-      strings: ["Triolingo", "Welcome!", "Are you ready to learn?"],
+      strings: ["Welcome!", "欢迎", "مرحباً", "환영","bienvenida", "mirëseardhje"],
       typeSpeed: 100,
-      backSpeed: 100,
+      backSpeed: 120,
       startDelay: 100,
       backDelay: 1800,
       cursorChar: "|", // Customize the cursor character
