@@ -70,7 +70,10 @@
   }
   
   .container2 {
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Adjust as needed */
   }
 
   .container3 {
@@ -228,4 +231,16 @@
   font-family: monospace;
   font-size: 50px;
   margin-bottom: 20px; /* Adjust spacing between title and images */
+}
+
+.text-container {
+  display: flex;
+  right: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.text-container p {
+  margin: 20px 0px; /* Adjust margins between paragraphs */
 }
