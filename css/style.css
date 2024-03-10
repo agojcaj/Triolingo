@@ -245,3 +245,12 @@
 .text-container p {
   margin: 20px 0px; /* Adjust margins between paragraphs */
 }
+
+.container12, .container13 {
+  flex: 1; /* Allow containers to grow equally */
+  text-align: left;
+  max-width: 1100px;
+  background: rgb(203, 216, 247);
+  border-radius: 20px;
+  padding: 10px;
+}
