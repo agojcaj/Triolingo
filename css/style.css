@@ -25,13 +25,14 @@
   .container-wrapper {
     flex: 1;
     display: flex;
+    top: 20px;
     justify-content: space-between; /* Adjust as needed */
     flex-direction: row;
     max-width: 1100px; /* Adjust the max-width as needed */
     margin: 20px auto;
-    padding: 10px;
+    padding: 0px;
     overflow: hidden;
-    background-color: rgba(79, 140, 238, 0.714);
+    background-color: transparent;
     border-radius: 20px;
     align-items: center;
     text-align: center;
@@ -108,9 +109,7 @@
 
   .navbar {
     position: fixed;
-    top: 0;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
-    display: block;
+    top:0%;
     max-width: 1100px; /* Adjust the max-width as needed */
     margin: 20px auto;
     padding: 10px;
@@ -134,7 +133,7 @@
     margin: 0 40px;
     color: rgb(7, 4, 39);
     text-decoration: none;
-    font-size: 27px;
+    font-size: 20px;
     height: auto;
   }
   
@@ -178,7 +177,6 @@
   justify-content: right;
   top: 25px; /* Adjust this value as needed */
   right: 25px; /* Adjust this value as needed */
-  z-index: 1000;
   width: 120px;
   height: 45px;
   background-color: rgba(79, 140, 238, 0.714);
@@ -226,6 +224,9 @@
   flex-direction: column; /* Align items vertically */
   align-items: center; /* Center items horizontally */
   text-align: center; /* Center text horizontally */
+  padding: 10px;
+  margin: 10px;
+  background-color: transparent;
 }
 
 .devs {
@@ -253,4 +254,14 @@
   background: rgb(203, 216, 247);
   border-radius: 20px;
   padding: 10px;
+}
+
+#signInButton {
+  right: 25px; /* Adjust as needed */
+  transition: opacity 0.5s; /* Add a transition effect */
+  opacity: 1; /* Initially visible */
+}
+
+#section1.scrolled #signInButton {
+  opacity: 0; /* Make it disappear when scrolled */
 }
