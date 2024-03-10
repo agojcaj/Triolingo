@@ -254,6 +254,8 @@
   background: rgb(203, 216, 247);
   border-radius: 20px;
   padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 #signInButton {
