@@ -176,13 +176,14 @@
 .top-button {
   position: fixed;
   justify-content: right;
-  top: 20px; /* Adjust this value as needed */
-  left: 20px; /* Adjust this value as needed */
+  top: 25px; /* Adjust this value as needed */
+  right: 25px; /* Adjust this value as needed */
   z-index: 1000;
-  width: 60px;
-  height: 30px;
+  width: 120px;
+  height: 45px;
   background-color: rgba(79, 140, 238, 0.714);
   border-radius: 20px;
+  font-size: 15px;
 }
 
 
