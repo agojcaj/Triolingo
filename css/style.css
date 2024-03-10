@@ -7,19 +7,23 @@
   body {
     display: block;
     margin: 8px;
-    background: #c3d8ed85;
+    background-image: url('../assets/output-onlinepngtools.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
   body.index {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:monospace;;
   }
   
   body.story {
     /* background: linear-gradient(#3a8df485, #81b6f885, #eff3f785, #bed7f685 #3a8df485);*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:monospace;;
   }
   
   .container-wrapper {
+    flex: 1;
     display: flex;
     justify-content: space-between; /* Adjust as needed */
     flex-direction: row;
@@ -27,10 +31,28 @@
     margin: 20px auto;
     padding: 10px;
     overflow: hidden;
-    background-color: rgba(107, 125, 241, 0.816);
+    background-color: rgba(79, 140, 238, 0.714);
     border-radius: 20px;
     align-items: center;
     text-align: center;
+    font-family:monospace;
+    font-size: 18px;
+  }
+
+  .container-wrapper2 {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    flex-direction: row;
+    max-width: 1100px; /* Adjust the max-width as needed */
+    margin: 20px auto;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(79, 140, 238, 0.714);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 15px;
   }
 
   .container, .container2 {
@@ -44,34 +66,69 @@
   
   .container {
     margin-right: 20px; /* Adjust as needed */
+    
   }
   
   .container2 {
     margin-left: 20px; /* Adjust as needed */
   }
 
+  .container3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 1100px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px; /* Adjust top margin as needed */
+    margin-bottom: 20px;
+  }
+  .container-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow containers to wrap to the next line */
+    justify-content: center;
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+  .container4, .container5, .container6,.container7,.container8,.container9,.container10,.container11{
+    flex: 1; /* Allow containers to grow equally */
+    flex-direction: column;
+    text-align: center;
+    max-width: 1100px;
+    background: rgb(203, 216, 247);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
   .navbar {
     display: flex;
     max-width: 1100px; /* Adjust the max-width as needed */
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
     overflow: hidden;
-    background-color: rgba(107, 125, 241, 0.816);
+    background-color: rgba(79, 140, 238, 0.714);
     border-radius: 20px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    font-family: monospace;
+    font-size: 50px;
   }
   
   .navOption {
     vertical-align: middle;
+    font-family: monospace;
+    font-size: 80px;
   }
   
   .navbar a {
     margin: 0 40px;
     color: rgb(7, 4, 39);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 27px;
     height: auto;
   }
   
@@ -84,25 +141,75 @@
     padding: 50px;
     color: rgb(7, 4, 39);
     text-align: center;
-    font-size: 23px;
-  }
-  
-  button {
-    background-color: rgb(226, 161, 186);
-    color: rgb(93, 22, 53);
-    text-align: center;
-    border-radius: 10px;
-    font-size: x-large;
-    border: none;
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  button:hover {
-    background-color: rgb(226, 161, 186);
-    transition: 0.3s ease;
+    font-size: 50px;
+    font-family:monospace;
   }
   
   .title {
-    font-size: 50px;
+    font-size: 110px;
+    text-align: center;
+    font-family: monospace;
+    color: #021e3a;
   }
+
+  #section1 {
+    padding: 10px;
+    margin-bottom: 20px;
+    min-height:100vh; /* Ensure the section covers at least the viewport height */
+    width:99%  ; /* Ensure the section covers the entire viewport width */
+    position: relative; /* Position the section relative to its normal position */
+    text-align: center;
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; 
+    overflow-x: hidden;
+    font-family: monospace;
+
+}
+
+#section2 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+}
+
+#section3 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+}
+
+#section4 {
+  padding: 10px;
+  margin-bottom: 20px;
+  min-height:100vh; /* Ensure the section covers at least the viewport height */
+  width:99%  ; /* Ensure the section covers the entire viewport width */
+  position: relative; /* Position the section relative to its normal position */
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; 
+}
+
+.round-image {
+  border-radius: 50%; /* Makes the images round */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text horizontally */
+}
+
+.devs {
+  font-family: monospace;
+  font-size: 50px;
+  margin-bottom: 20px; /* Adjust spacing between title and images */
+}
