@@ -104,6 +104,10 @@
   }
 
   .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
     display: flex;
     max-width: 1100px; /* Adjust the max-width as needed */
     margin: 30px auto;
@@ -167,6 +171,17 @@
 
 }
 
+.top-button {
+  position: top;
+  top: 20px; /* Adjust this value as needed */
+  left: 20px; /* Adjust this value as needed */
+  z-index: 1000;
+  width: 30px;
+  height: 10px;
+  background-color: rgba(79, 140, 238, 0.714);
+}
+
+
 #section2 {
   padding: 10px;
   margin-bottom: 20px;
@@ -174,6 +189,7 @@
   width:99%  ; /* Ensure the section covers the entire viewport width */
   position: relative; /* Position the section relative to its normal position */
   overflow-x: hidden;
+  padding-top: 60px;
 }
 
 #section3 {
