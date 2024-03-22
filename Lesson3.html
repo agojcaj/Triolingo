@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3: Advanced Spanish Translation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Lesson 3: Advanced Spanish Translation</h1>
+    <p>Translate the following sentence from Spanish to English:</p>
+    <p><strong>Spanish:</strong> Adiós, gracias por la ayuda.</p>
+    <label for="textToTranslate">Enter translation:</label><br>
+    <input type="text" id="textToTranslate"><br>
+    <span id="error" style="color: red; display: none;">Incorrect translation. Please try again.</span><br><br>
+    <button onclick="checkTranslation()">Translate & Check</button><br><br>
+    <button id="completeButton" onclick="completeLesson()" disabled>Complete Lesson</button><br><br>
+    <button onclick="displayHint()">Hint</button><br><br>
+    <p id="hint" style="display: none;"><strong>Hint:</strong> The Spanish word "Adiós" means "Goodbye" in English.</p>
+
+    <script>
+        async function checkTranslation() {
+            const userTranslation = document.getElementById('textToTranslate').value.trim();
+            if (userTranslation === '') {
+                alert('Please enter your translation.');
+                return;
+            }
+            
+            const correctTranslation = "Goodbye, thank you for the help.";
+            const userTranslationLowerCase = userTranslation.toLowerCase();
+            const correctTranslationLowerCase = correctTranslation.toLowerCase();
+            
+            if (userTranslationLowerCase === correctTranslationLowerCase) {
+                alert('Correct! Well done.');
+                document.getElementById('completeButton').disabled = false;
+                document.getElementById('error').style.display = 'none'; // Hide error message if correct
+            } else {
+                document.getElementById('error').style.display = 'inline'; // Show error message if incorrect
+            }
+        }
+
+        function completeLesson() {
+            // Redirect to Lesson 4 or to completion page
+            // Example: window.location.href = 'lesson4.html';
+            window.location.href = 'completion.html'; // Redirect to completion page
+        }
+
+        function displayHint() {
+            document.getElementById('hint').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
