@@ -7,21 +7,33 @@
     <link rel="stylesheet" type="text/css" href="../css/modules.css">
 </head>
 <body>
-    <h1>Lesson 3: Advanced Spanish Translation</h1>
-    <p>Translate the following sentence from Spanish to English:</p>
-    <p><strong>Spanish:</strong> Adiós, gracias por la ayuda.</p>
-    <label for="textToTranslate">Enter translation:</label><br>
-    <input type="text" id="textToTranslate"><br>
-    <span id="error" style="color: red; display: none;">Incorrect translation. Please try again.</span><br><br>
-    <button onclick="checkTranslation()">Translate & Check</button><br><br>
-    <button id="completeButton" onclick="completeLesson()" disabled>Complete Lesson</button><br><br>
-    <button onclick="displayHint()">Hint</button><br><br>
-    <p id="hint" style="display: none;"><strong>Hint:</strong> The Spanish word "Adiós" means "Goodbye" in English.</p>
-    <!-- Go Back Home button -->
-    <div class="go-back-home-container">
-        <a href="./modules.html" class="go-back-home-button">Go Back Home</a>
-    </div>
+    <div class = "container-lesson">
+        <h1>Lesson 3: Advanced Spanish Translation</h1>
+        <br>
+        <br>
+        <div class="translation">
+            <h3 style="color: rgb(36, 69, 145)">Translate the following sentence from Spanish to English:</h3>
+            <br>
+            <p><strong>Spanish:</strong> Adiós, gracias por la ayuda.</p>
+            <br>
+            <label for="textToTranslate">Enter translation:</label><br>
+            <br><br>
+            <input type="text" id="textToTranslate"><br>
+            <span id="error" style="color: red; display: none;">Incorrect translation. Please try again.</span><br><br>
+       
+            <div class="three-buttons">
+                <button onclick="checkTranslation()">Translate & Check</button><br><br>
+                <button onclick="displayHint()">Hint</button><br><br>
+                <button id="completeButton" onclick="completeLesson()" disabled>Complete Lesson</button><br><br>
+            </div>
+            <p id="hint" style="display: none;"><strong>Hint:</strong> The Spanish word "Adiós" means "Goodbye" in English.</p>
+        </div>
 
+        <!-- Go Back Home button -->
+        <div class="go-back-home-container">
+            <a href="./modules.html" class="go-back-home-button">Go Back Home</a>
+        </div>
+    </div>
 
     <script>
         async function checkTranslation() {
