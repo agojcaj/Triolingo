@@ -1,0 +1,14 @@
+* {
+    border: 3px;
+    margin: 3px;
+    padding: 3px;
+  }
+
+  body {
+    display: block;
+    margin: 8px;
+    background-image: url('../assets/output-onlinepngtools.png'); /* Replace 'background.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
