@@ -8,13 +8,14 @@
 </head>
 <body>
     <div class = "container-lesson">
-        <h1>Lesson 1: Basic Albanian Translation</h1>
-        <br>
-        <br>
+        <div class="module-header">
+            <img src="../assets/flag.png" alt="United States Flag" height="80" width="auto" />
+            <h1>Lesson 1: Basic Albanian Translation</h1>
+        </div>
         <div class="translation">
             <h3 style="color: rgb(36, 69, 145)">Translate the following sentence from Albanian to English:</h3>
             <br>
-            <p><strong>Albanian:</strong> Atdheu i mikut tim Sebastian është Shqipëria</p>
+            <p><strong>Albanian:</strong> Atdheu i mikut tim Agron është Shqipëria</p>
             <br>
             <label for="textToTranslate">Enter translation:</label><br>
             <br><br>
@@ -43,7 +44,7 @@
                 return;
             }
             
-            const correctTranslation = "My friend Sebastian's homeland is Albania";
+            const correctTranslation = "My friend Agron's homeland is Albania";
             const userTranslationLowerCase = userTranslation.toLowerCase();
             const correctTranslationLowerCase = correctTranslation.toLowerCase();
             

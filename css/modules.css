@@ -107,7 +107,7 @@ body {
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
-  margin-bottom: 20px; /* Add margin to separate header from progress */
+  margin-bottom: 0px; /* Add margin to separate header from progress */
 }
 
 .module-header h1 {
@@ -213,3 +213,20 @@ body {
     font-family: monospace;
     font-size: 18px;
 }
+
+.completion-box{
+  margin-top: 20px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.completion-box p{
+  font-size: 20px;
+}
+
