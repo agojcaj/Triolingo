@@ -108,8 +108,9 @@
   }
 
   .navbar {
-    position: fixed;
-    top:0%;
+    position: relative;
+    width: fit-content;
+    height: 60px;
     max-width: 1100px; /* Adjust the max-width as needed */
     margin: 20px auto;
     padding: 10px;
@@ -120,7 +121,7 @@
     align-items: center;
     text-align: center;
     font-family: monospace;
-    font-size: 40px;
+    font-size: 50px;
   }
   
   .navOption {
@@ -133,7 +134,7 @@
     margin: 0 40px;
     color: rgb(7, 4, 39);
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     height: auto;
   }
   
@@ -173,15 +174,23 @@
 }
 
 .top-button {
-  position: fixed;
+  position:absolute;
   justify-content: right;
   top: 25px; /* Adjust this value as needed */
-  right: 25px; /* Adjust this value as needed */
+  right: 50px; /* Adjust this value as needed */
   width: 120px;
-  height: 45px;
+  height: 60px;
   background-color: rgba(79, 140, 238, 0.714);
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 20px;
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 20px auto;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(79, 140, 238, 0.714);
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
 }
 
 
@@ -236,10 +245,17 @@
 
 #signInButton {
   right: 25px; /* Adjust as needed */
-  transition: opacity 0.5s; /* Add a transition effect */
-  opacity: 1; /* Initially visible */
-}
-
-#section1.scrolled #signInButton {
-  opacity: 0; /* Make it disappear when scrolled */
+  position: relative;
+  width: fit-content;
+  height: 60px;
+  max-width: 1100px; /* Adjust the max-width as needed */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: rgba(79, 140, 238, 0.714);
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
 }
