@@ -11,8 +11,14 @@
     "test": "jest"
   },
   "jest": {
+    "setupFiles": [
+      "jest-fetch-mock/setupJest"
+    ],
     "testEnvironment": "jest-environment-jsdom"
   },
   "author": "Agron Gojcaj",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest-fetch-mock": "^3.0.3"
+  }
 }

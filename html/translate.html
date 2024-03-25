@@ -6,66 +6,7 @@
     <title>Google Translate API Demo</title>
     <link rel="stylesheet" type="text/css" href="../css/modules.css">
     
-    <script>
-        async function translateText() {
-            const url = 'https://google-translate1.p.rapidapi.com/language/translate/v2';
-            const apiKey = '111923ac03mshf09ff56ee94178ep1ae5c5jsn0327f1d6f865'; 
-            
-            const textToTranslate = document.getElementById('textToTranslate').value;
-            const targetLanguage = document.getElementById('targetLanguage').value;
-            const autoDetect = document.getElementById('autoDetect').checked;
-
-            let sourceLanguage = '';
-            let options;
-
-            if (autoDetect) {
-                options = {
-                    method: 'POST',
-                    headers: {
-                        'content-type': 'application/x-www-form-urlencoded',
-                        'X-RapidAPI-Key': apiKey,
-                        'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-                    },
-                    body: new URLSearchParams({
-                        q: textToTranslate
-                    })
-                };
-
-                try {
-                    const response = await fetch(url, options);
-                    const result = await response.json();
-                    sourceLanguage = result.data.translations[0].detectedSourceLanguage;
-                } catch (error) {
-                    console.error(error);
-                }
-            }
-
-            options = {
-                method: 'POST',
-                headers: {
-                    'content-type': 'application/x-www-form-urlencoded',
-                    'X-RapidAPI-Key': apiKey,
-                    'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-                },
-                body: new URLSearchParams({
-                    q: textToTranslate,
-                    source: sourceLanguage,
-                    target: targetLanguage
-                })
-            };
-
-            try {
-                const response = await fetch(url, options);
-                const result = await response.json();
-                const translatedText = result.data.translations[0].translatedText;
-                
-                // Display the translated text on the web page
-                document.getElementById('translatedText').innerText = translatedText;
-            } catch (error) {
-                console.error(error);
-            }
-        }
-    </script>
+    <script src="../src/translateText.js"></script>
 </head>
 <body>
     <h1>Google Translate API Demo</h1>
