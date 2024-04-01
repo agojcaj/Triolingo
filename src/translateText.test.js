@@ -1,7 +1,6 @@
 const { enableFetchMocks } = require('jest-fetch-mock');
 enableFetchMocks();
 
-
 beforeEach(() => {
   fetch.resetMocks();
   // Mocking document.getElementById to return an object with a value or checked property
@@ -21,11 +20,8 @@ test('translateText successfully translates text', async () => {
     }
   }));
 
-  // We need to import or define the translateText function here
   const { translateText } = require('./translateText.js');
-  
-  await translateText(); // Assuming translateText is accessible
-  
+  await translateText();
   // Assertions
   expect(fetch).toHaveBeenCalledTimes(1);
   expect(fetch).toHaveBeenCalledWith(
@@ -41,5 +37,3 @@ test('translateText successfully translates text', async () => {
   const translatedTextElement = document.getElementById('translatedText');
   expect(translatedTextElement.innerText).toBe('Hola');
 });
-
-// You can add more tests here, such as testing error handling, autoDetect feature, etc.

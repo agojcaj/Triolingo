@@ -22,7 +22,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
-    padding: 50px 60px 70px;
+    padding: 40px 50px 70px;
+    margin: auto;
     text-align: center;
     border-radius: 20px;
 
@@ -50,7 +51,7 @@
 
 .input-field {
     background: #eaeaea;
-    margin: 15px;
+    margin: 30px;
     border-radius: 3px;
     display: flex;
     align-items: center;
@@ -61,7 +62,7 @@ input {
     background: transparent;
     border: 0;
     outline: 0;
-    padding: 18px 15px;
+    padding: 16px 15px;
 }
 
 .input-field i {
@@ -93,6 +94,7 @@ form p a {
     background: rgba(79, 140, 238, 0.714);
     color:#fff;
     height: 40px;
+    margin: 30px;
     border-radius: 15px;
     border: 0;
     outline: 0;
@@ -101,5 +103,5 @@ form p a {
 }
 
 .input-group {
-    height: 280px;
+    height: 160px;
 }

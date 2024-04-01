@@ -1,10 +1,7 @@
 const { authenticate } = require('./login');
-
 describe('authenticate function', () => {
-    // Mocking alert
     global.alert = jest.fn();
 
-    // Mocking window.location
     delete global.window.location;
     global.window = Object.create(window);
     global.window.location = { href: '' };
@@ -14,7 +11,6 @@ describe('authenticate function', () => {
         global.alert.mockClear();
         global.window.location.href = '';
 
-        // Mocking document.getElementById
         document.getElementById = jest.fn(id => ({
             value: id === 'username' ? 'admin' : id === 'password' ? 'password' : ''
         }));

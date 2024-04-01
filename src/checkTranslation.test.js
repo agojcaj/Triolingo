@@ -1,6 +1,3 @@
-/**
- * translation.test.js
- */
 describe('checkTranslation function', () => {
     // Mocking the global alert function
     global.alert = jest.fn();
