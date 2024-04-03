@@ -4,32 +4,9 @@ async function translateText() {
     
     const textToTranslate = document.getElementById('textToTranslate').value;
     const targetLanguage = document.getElementById('targetLanguage').value;
-    const autoDetect = document.getElementById('autoDetect').checked;
 
     let sourceLanguage = '';
     let options;
-
-    if (autoDetect) {
-        options = {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/x-www-form-urlencoded',
-                'X-RapidAPI-Key': apiKey,
-                'X-RapidAPI-Host': 'google-translate1.p.rapidapi.com'
-            },
-            body: new URLSearchParams({
-                q: textToTranslate
-            })
-        };
-
-        try {
-            const response = await fetch(url, options);
-            const result = await response.json();
-            sourceLanguage = result.data.translations[0].detectedSourceLanguage;
-        } catch (error) {
-            console.error(error);
-        }
-    }
 
     options = {
         method: 'POST',

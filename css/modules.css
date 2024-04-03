@@ -230,3 +230,54 @@ body {
   font-size: 20px;
 }
 
+.translate-box{
+  display: flex;
+  margin-top: 50px; /* Adjust this value to increase or decrease space between modules */
+  justify-content: center;
+  flex-direction: column;
+  width: 700px; /* Set the width to 80% of the container */
+  max-width: 800px; /* Set a maximum width for the module */
+  background-color: rgb(188, 212, 234); /* Add a background color for better visibility */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding for spacing inside the module */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.buttonTranslate{
+  padding: 10px 20px;
+  background-color: rgba(79, 140, 238, 0.714);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+#targetLanguage{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 18px 65px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.translated-text{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px 90px;
+  font-family: monospace;
+  font-size: 15px;
+
+}
+
+#textToTranslate{
+  background-color:rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 15px;
+}
