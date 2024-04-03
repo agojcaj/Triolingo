@@ -108,6 +108,7 @@ body {
   align-items: center; /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   margin-bottom: 0px; /* Add margin to separate header from progress */
+  font-size: 22px;
 }
 
 .module-header h1 {
