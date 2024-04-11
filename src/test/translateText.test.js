@@ -20,7 +20,7 @@ test('translateText successfully translates text', async () => {
     }
   }));
 
-  const { translateText } = require('./translateText.js');
+  const { translateText } = require('./../translateText.js');
   await translateText();
   // Assertions
   expect(fetch).toHaveBeenCalledTimes(1);

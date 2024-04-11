@@ -1,4 +1,4 @@
-const { authenticate } = require('./login');
+const { authenticate } = require('./../login');
 describe('authenticate function', () => {
     global.alert = jest.fn();
 
